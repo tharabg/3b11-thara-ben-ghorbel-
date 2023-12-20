@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thara Ben Ghorbel - Mon portfolio</title>
 
-    <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <style>
+        header h1:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        #welcomeMessage {
+            font-size: 1.2em;
+            color: green;
+            margin-top: 20px;
+        }
+
+        #profileImage {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,6 +41,8 @@
     </nav>
 
     <section>
+        <div id="welcomeMessage">Bienvenue à mon portfolio</div>
+        <img id="profileImage" src="C:\Users\thaar\Downloads\téléchargement (1).png"" alt="PORTFOLIO">
         <h2>Thème choisi</h2>
         <p>Ce portfolio illustre mon parcours professionnel jusqu'à présent et offre un aperçu de ma vision à long terme. En constante évolution, je suis déterminé(e) à la science des données et à contribuer positivement au domaine informatique.</p>
     </section>
@@ -30,5 +50,20 @@
     <footer>
         <p>&copy; 2023 Thara Ben Ghorbel</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mainTitle = document.querySelector('header h1');
+            var welcomeMessage = document.getElementById('welcomeMessage');
+
+            mainTitle.addEventListener('click', function () {
+                alert('Titre cliqué ! Ajoutez ici votre propre logique.');
+            });
+
+            setTimeout(function () {
+                welcomeMessage.style.display = 'none';
+            }, 5000);
+        });
+    </script>
 </body>
 </html>

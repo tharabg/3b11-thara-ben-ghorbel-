@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thara Ben Ghorbel - Contact</title>
     <link rel="stylesheet" href="contact.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        /* Ajoutez du style pour le formulaire si nécessaire */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,9 +31,57 @@
         <h2>Coordonnées</h2>
         <p>Adresse e-mail: tharabenghorbel4@gmail.com<br>Numéro de téléphone: 92921449</p>
     </section>
+	<img id="profileImage" src="C:\Users\thaar\Downloads\téléchargement.png"" alt="contactez-moi">
+
+	
+
+    <section>
+        <h2>Formulaire de Contact</h2>
+        <form id="contactForm">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2023 Thara Ben Ghorbel</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Attend que le DOM soit entièrement chargé avant d'attacher des gestionnaires d'événements
+
+            // Sélectionne le formulaire par son ID
+            var contactForm = document.getElementById('contactForm');
+
+            
+            contactForm.addEventListener('submit', function (event) {
+                // Empêche l'envoi du formulaire par défaut
+                event.preventDefault();
+
+               
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+
+                // Ajoute ici la logique pour traiter les données du formulaire
+                
+
+                           console.log('Nom:', name);
+                console.log('E-mail:', email);
+                console.log('Message:', message);
+
+               
+            });
+        });
+    </script>
 </body>
 </html>

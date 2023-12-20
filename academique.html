@@ -8,6 +8,9 @@
     <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" type="text/css" href="academique.css">
 </head>
+
+
+
 <body>
     <header>
         <h1>Parcours Académique</h1>
@@ -23,10 +26,38 @@
     </nav>
 
     <section>
+	<img id="profileImage" src="C:\Users\thaar\Downloads\manuels-colores-casquette-graduation-representant-parcours-academique-realisations-venir_333547-18797.jpg"" alt="parcours">
+
         <h2>Formation Académique</h2>
         <p>Mon parcours académique a débuté par l'obtention d'un diplôme de baccalauréat en mathématiques. Par la suite, j'ai poursuivi mes études supérieures pour obtenir une licence en mathématiques appliquées avec une spécialisation en sciences des données à la Faculté des Sciences de Tunis.</p>
     </section>
 
     <section>
         <h2>Images</h2>
-        <img src="386861215_3480686375594841_2608800
+        <img src="386861215_3480686375594841_2608800"
+		<!-- ... Votre code HTML existant ... -->
+
+<script>
+    
+    var formationAcademiqueSection = document.querySelector('section:nth-of-type(1)');
+
+    
+    function changerCouleurTexte() {
+        // Changez la couleur du texte en rouge 
+        formationAcademiqueSection.style.color = 'red';
+    }
+
+        var boutonChangerCouleur = document.createElement('button');
+    boutonChangerCouleur.textContent = 'Changer la couleur du texte';
+    boutonChangerCouleur.addEventListener('click', changerCouleurTexte);
+
+    // Ajoutez le bouton à la fin de la section "Formation Académique"
+    formationAcademiqueSection.appendChild(boutonChangerCouleur);
+</script>
+
+</body>
+</html>
+
+		
+		
+

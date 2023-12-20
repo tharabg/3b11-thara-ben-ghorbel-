@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thara Ben Ghorbel - Expériences</title>
     <link rel="stylesheet" href="experience.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        section {
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,9 +25,30 @@
         </ul>
     </nav>
 
-    <section>
+    <section id="experienceSection">
 		<img src="img.jpg" alt="img de thara"/>
         <h2>Expériences professionnelles</h2>
         <p>Mon parcours professionnel a débuté en 2022 avec un stage d'été chez USS4u. J'ai contribué au développement d'une application intelligente visant à détecter les propriétés d'une molécule. Cette expérience m'a enseigné l'importance du travail d'équipe et m'a familiarisé avec les concepts de l'intelligence artificielle.</p>
 
-        <p>Par la suite, j'ai poursuivi mon engagement avec USS4u à travers un stage de Projet de Fin d'Études (PFE). Mon projet consistait à concevoir une application web utilisant l'intelligence artificielle pour aider au diagnostic de la maladie du glaucome, destinée aux radiologues. Cette expérience m'a permis de développer mes compétences dans le domaine 
+        <p>Par la suite, j'ai poursuivi mon engagement avec USS4u à travers un stage de Projet de Fin d'Études (PFE). Mon projet consistait à concevoir une application web utilisant l'intelligence artificielle pour aider au diagnostic de la maladie du glaucome, destinée aux radiologues. Cette expérience m'a permis de développer mes compétences dans le domaine
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Thara Ben Ghorbel</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var experienceSection = document.getElementById('experienceSection');
+
+            experienceSection.addEventListener('mouseover', function () {
+                experienceSection.style.backgroundColor = '#f0f0f0';
+            });
+
+            experienceSection.addEventListener('mouseout', function () {
+                experienceSection.style.backgroundColor = '';
+            });
+        });
+    </script>
+</body>
+</html>
